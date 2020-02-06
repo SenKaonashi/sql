@@ -12,3 +12,7 @@ Starting MySQL
 .... ERROR! The server quit without updating PID file (/usr/local/var/mysql/・・・.pid).
 
 macのupdateが必要？
+
+macのOSバージョンを更新してない場合は、上記のエラーが発生する可能性がある。
+恐らく、touchコマンドや、chmodによる権限を変更しても、mysqlが起動しない可能性あり。
+osのバージョンを更新したら、正常に動く様になった。
